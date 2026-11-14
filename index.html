@@ -190,15 +190,41 @@ img[hidden] { display:none!important; }
      EDIT 03: HEADER / MOBILE TITLE
      Desktop banner is an image in stuff/. Mobile text can be edited below.
      =================================================================== -->
+
+<!-- ==========================================
+     EDIT 03: RESPONSIVE WEBSITE HEADER
+
+     Desktop: ggo-merch-header.png
+     Mobile: small-ggo-header.png
+
+     Bootstrap automatically switches at 768px.
+     ========================================== -->
+
 <header id="top" class="banner-area">
+
+  <!-- DESKTOP HEADER -->
+  <!-- Visible on tablets and larger screens -->
   <div class="container-fluid px-0 d-none d-md-block">
-    <img class="banner-image" id="siteBanner" src="stuff/ggo-merch-header.png" alt="GGO merchandise banner showing the club logo, maps, NEIU building, and geography-inspired accessories" width="1800" height="200">
+    <img
+      class="banner-image"
+      id="siteBanner"
+      src="stuff/ggo-merch-header.png"
+      alt="GGO merchandise banner"
+      width="1800"
+      height="200">
   </div>
-  <div class="container d-md-none mobile-hero py-4 text-center">
-    <h1 class="h3 fw-bold mb-1">GGO Merch</h1>
-    <p class="mb-0 small">Geography & GIS Organization • NEIU</p>
+
+  <!-- MOBILE HEADER -->
+  <!-- Visible on phones only -->
+  <div class="container-fluid px-0 d-md-none">
+    <img
+      class="banner-image"
+      src="stuff/small-ggo-header.png"
+      alt="NEIU Geography and GIS Organization logo">
   </div>
+
 </header>
+
 
 <!-- ===================================================================
      PAGE —: MAIN WEBSITE CONTENT BEGINS
